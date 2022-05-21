@@ -79,17 +79,4 @@ body{
     width: 90px;
     margin-right: 20px;
 }
-#navbarContainer{
-    width: 100vw;
-    height: 10vh;
-    
-}
-#navbar{
-    display:flex;
-    
-}
-#navbar div #logo{
-    height: 60%;
-    width: 40%;
-    margin-left: 7.6%;
-}
+
