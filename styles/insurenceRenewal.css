@@ -1,0 +1,48 @@
+.insurenceRenewal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(234, 248, 243);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.insurenceRenewalLeft{
+    
+    margin: auto;
+    margin-top: 20%;
+    margin-left: 30%;
+}
+#leftPart{
+    background-color: white;
+}
+.insurenceRenewalRight{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-right: 26px;
+    margin-bottom: 30px;
+   
+    gap: 20px;
+}
+.insurenceRenewalRight>div{
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.insurenceRenewalRight>div>img{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 15px;
+}
+p{
+    text-align: center;
+}
+#head{
+    text-align: center;
+}
+
+li{
+    margin-top: 15px;
+    
+}
