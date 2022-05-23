@@ -1,0 +1,111 @@
+.help {
+    padding: 70px;
+}
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.help .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+div {
+    display: block;
+}
+body {
+    font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+}
+.help .container .heading {
+    width: 100%;
+}
+
+.help .container .heading .h2 {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 0;
+    margin: 0 0 20px;
+    font-weight: 500;
+    color: #253858;
+}
+
+.help .container .heading .h2 span {
+    background: #0065FF;
+    width: 70px;
+    height: 4px;
+    margin: 20px 0 0;
+    display: block;
+}
+.help .container .help-text {
+    width: 30%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.help .container .help-pic {
+    width: 70%;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    text-align: right;
+}
+
+.help .container .help-text p {
+    font-size: 16px;
+    padding: 20px 0;
+    color: #253858;
+    line-height: 30px;
+}
+
+.help .container .help-text a.btn {
+    border: 1px solid #7A869A;
+    display: block;
+    padding: 20px 0 20px 20%;
+    border-radius: 8px;
+    margin: 0 0 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.help .container .help-text a.btn i {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: url(../../images/home-v1/btn-icons.png) no-repeat;
+    background-size: cover;
+}
+
+.help .container .help-text a.btn span {
+    display: block;
+    padding: 0 0 5px;
+    color: #5E6C84;
+}
+
+.help .container .help-text a.btn span:last-child {
+    font-size: 18px;
+    color: #172B4D;
+    font-weight: 500;
+}
+
+.help .container .help-text a.btn.no-margin {
+    margin: 0;
+}
+
+.help .container .help-text a.btn i.support {
+    background-position: -52px 0;
+}
+
+
+
