@@ -269,6 +269,91 @@ body{
 }
 
 
+
+
+
+
+/* below navbar section */
+
+
+#bannerContainer{
+    /* border: 2px solid red; */
+    width: 100%;
+    /* height: 18rem; */
+    padding: 0 10%;
+    box-sizing: border-box;
+    margin-top: 50px;   
+}
+#bannerContainer section{
+    display: flex;
+    /* flex-grow: 1 ; */
+}
+#bannerContainer section article{
+    
+    width: 50%;
+}
+#uspContainer{
+    display: flex;
+}
+
+#bannerContainer h1{
+    margin: 0;
+    font-weight: 300;
+    font-size: 230%;
+    margin-bottom: 6%;
+    color: #3B4C69;
+    margin-top: 8%;
+}
+#bannerContainer h1 span{
+    font-weight: 600;
+}
+#bannerContainer  i{
+    /* margin-top: %; */
+    margin-right: 2%;
+}
+#bannerContainer  #ispan1{
+    background: url('https://static.pbcdn.in/cdn/images/svg/home-page-icons.svg?v=6');
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background-size: 100%;
+}
+#bannerContainer   i img{
+    width: 37px;
+    height: 37px;
+}
+
+#bannerContainer #ispan2{
+    background: url('https://static.pbcdn.in/cdn/images/svg/home-page-icons.svg?v=6');
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background-size: 100%;
+    background-position: 0 1.6%;
+    margin-left: 2%;
+}
+#bannerContainer article #displayImage{
+    height: 15rem;
+    width: auto;
+    vertical-align: auto;
+}
+#spanHeading1{
+    color: #776BFD;
+}
+#spanHeading2{
+    color: #FF9B2C;
+}
+#spanHeading1, #spanHeading2{
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0;
+}
+
+#akshayContainer{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 40%;
+
 *{
     margin: 0px;
     padding: 0px;
