@@ -5,10 +5,12 @@
 body{
     margin: 0px
 }
+
+/* insurancePlanPrt */
 .insurensePlan{
     display: grid;
     width: 80%;
-    height: 166px;
+    height: auto;
     grid-template-columns: repeat(3,1fr);
     gap: 15px;
     margin: auto;
@@ -38,10 +40,7 @@ body{
  justify-content: space-between;
  margin-top: 15px;
 }
-/* .health{
-    background: url("https://static.pbcdn.in/cdn/images/home/float-icons.png") no-repeat;
-    
-} */
+
 .iconRight{
     width: 120px;
     height: 70px;
@@ -57,11 +56,11 @@ body{
     margin-bottom: -15px;
     
 }
-.head{
+.iconLeft >.head{
     margin-left: 30px;
     color: white;
 }
-.copy{
+.insurensePlanupperLower>.copy{
     font-size: 22px;
     color: #fff;
     line-height: 33px;
@@ -79,4 +78,194 @@ body{
     width: 90px;
     margin-right: 20px;
 }
+
+/* insurance plan summry mediaqueries*/
+@media all and (min-width:100px) and (max-width:450px) {
+    .insurensePlan{
+        
+        grid-template-columns: repeat(1,1fr);
+       
+        
+        
+    }
+}
+
+/* insurance plan summry */
+
+.sumrryInsurencePlan{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.sumrryInsurencePlanUpper{
+    font-size: 36px;
+    color: #253858;
+    line-height: 54px;
+    font-weight: 300;
+    margin: auto;
+    margin-left: 0%;
+   
+}
+
+
+.sumrryInsurencePlanLower{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 90%;
+    gap: 40px;
+    
+    margin: auto;
+}
+
+.info1{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-left:2px solid#2438d4;
+}
+.info2{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-left:2px solid#7585f9;
+    margin-top: 20px;
+}
+.info3{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-left:2px solid turquoise;
+    margin-left: 20px;
+}
+.info4{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-left:2px solid yellow;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.summrypart > *{
+    margin: 15px;
+    
+}
+.summrypart{
+    height: 200px;
+    width: 200px;
+}
+
+.info1 >.head{
+    color: #2438d4;
+    font-weight: bolder;
+    margin-top: -15px;
+}
+.info2 >.head{
+    color: #7585f9;
+    font-weight: bolder;
+    margin-top: -15px;
+}
+.info3 >.head{
+    color: turquoise;
+    font-weight: bolder;
+    margin-top: -15px;
+}
+.info4 >.head{
+    color: yellow;
+    font-weight: bolder;
+    margin-top: -15px;
+}
+
+
+/* insurance plan summry mediaqueries*/
+@media all and (min-width:100px) and (max-width:450px) {
+    .sumrryInsurencePlan{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .sumrryInsurencePlanLower{
+        
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+        
+    }
+}
+@media all and (min-width:450px) and (max-width:850px) {
+    .sumrryInsurencePlan{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
+
+/* Policyhelpfeature */
+
+.Policyhelpfeature{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    height: auto;
+    gap: 30px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.Policyhelpfeature >div >img{
+    
+    width: 100%;
+
+}
+/* Policyhelpfeature  mediaQueries*/
+
+@media all and (min-width:100px) and (max-width:450px) {
+    .Policyhelpfeature{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
+@media all and (min-width:450px) and (max-width:850px) {
+    .Policyhelpfeature{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
+
+
+#ourpartner{
+    background-color: #f7f9ff;
+    height: auto;
+}
+#ourPartnerContainer{
+    width: 80%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(7,1fr);
+    margin: auto;
+    margin-top: 4%;
+
+}
+#ourPartnerContainer>div>img{
+    height: 60px;
+    width: 100%;
+    border: 1px solid gainsboro;
+}
+#ourpartner>h2{
+    margin-top: 4%;
+    
+    text-align: center;
+}
+#ourpartner>p{
+    
+    text-align: center;
+}
+
+@media all and (min-width:100px) and (max-width:450px) {
+    #ourPartnerContainer{
+        
+        grid-template-columns: repeat(3,1fr);
+      
+    }
+}
+@media all and (min-width:450px) and (max-width:852px) {
+    #ourPartnerContainer{
+        grid-template-columns: repeat(5,1fr);
+        
+    }
+}
+
 
