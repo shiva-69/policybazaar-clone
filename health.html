@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a3fd128c40.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+
+        .main-div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 80%;
+            margin: auto;
+
+        }
+
+        .main-div .left-div .p-content {
+            width: 260px;
+            height: 25px;
+            margin-top: -10px;
+            margin-left: 10px;
+            background-color: rgb(77, 169, 77);
+        }
+
+        p {
+            margin-left: 15px;
+            margin-top: -1px;
+            /* color: white; */
+        }
+
+        .line {
+            margin-top: -5px;
+            line-height: 25px;
+            color: rgb(66, 65, 65);
+            font-weight: lighter;
+        }
+
+        .img-url img {
+            width: 450px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .call {
+            display: flex;
+            width: 150px;
+            height: 50px;
+            font-size: 25px;
+        }
+
+        .main-div .right-div {
+            margin-top: 39px;
+            margin-left: 100px;
+        }
+
+        .main-div .right-div p {
+            margin-left: -2px;
+            margin-bottom: -12px;
+            font-size: 18px;
+        }
+
+        .main-div .right-div .line-left {
+            width: 90px;
+            height: 5px;
+            background-color: rgb(249, 155, 40);
+            margin-top: -5px;
+        }
+
+        .number-line {
+            display: flex;
+            margin-top: 20px;
+            width: 600px;
+        }
+
+        hr {
+            width: 40%;
+            border: 0.1px solid #aaa;
+
+        }
+
+        .number-line p {
+
+            top: 10px;
+            right: 10px;
+            width: 16px;
+            height: 16px;
+            /* background: #888; */
+            color: #aaa;
+            border: 1px solid #aaa;
+            text-align: center;
+            line-height: 15px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .male-female {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .male {
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            border-radius: 5px;
+            background-color: rgb(222, 253, 222);
+        }
+
+        .female {
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            border-radius: 5px;
+        }
+
+        .male-female .male img {
+            width: 40px;
+            margin-left: 30px;
+            margin-top: 9px;
+        }
+
+        .male-female .female img {
+            width: 40px;
+            margin: auto;
+            margin-left: 26px;
+            margin-top: 9px;
+        }
+
+        .male-female p {
+            text-align: center;
+            font-size: 12px;
+            color: rgb(139, 135, 135);
+        }
+
+        .input {
+            margin-left: -122px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 50px;
+            gap: 20px;
+        }
+
+        input[type="number"],
+        input[type="text"] {
+
+            font-size: 17px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 17px;
+            /* outline: none; */
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 270px;
+        }
+
+        button {
+            width: 350px;
+            height: 45px;
+            background-color: rgb(254, 113, 61);
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        h6 {
+            margin-left: -25px;
+            width: 500px;
+            color: #aaa;
+
+        }
+
+        h6 a {
+            text-decoration: none;
+        }
+
+        .bottom-div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 80%;
+            height: auto;
+
+            margin: auto;
+        }
+
+
+
+        .bottom-div b {
+            width: 300px;
+            height: 0px;
+            border: 0.1px solid rgb(190, 187, 187);
+            margin-top: 30px;
+        }
+
+
+        .bottom-div h2 {
+            margin-right: 15px;
+            margin-left: 10px;
+        }
+
+        .content-div h3 {
+            color: black;
+
+        }
+        .content-1{
+            text-align: center;
+        }
+        .content-2{
+            text-align: center;
+        }
+        .content-3{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="https://static.pbcdn.in/myaccount-cdn/images/login-logo.svg" alt="">
+        <div class="call"><i class="fa-solid fa-headset"></i> </div>
+    </div>
+    <div class="main-div">
+        <div class="left-div">
+            <h3 style="margin-left: 10px;">Why buy from Policybazaar?</h3>
+            <div class="p-content">
+                <p>Get up to 15% Online discount**</p>
+            </div>
+
+            <div class="line">
+                <ul>
+                    <li>30 minutes claim support*</li>
+                    <li>All Covid-19 Treatments covered</li>
+                    <li>Instant Purchase, No Medicals Required</li>
+                    <li>Tax Benefits upto ₹ 75,000 under Sec. 80D</li>
+                </ul>
+            </div>
+
+            <div class="img-url">
+                <img src="https://static.pbcdn.in/health-cdn/images/prelead/images/leftHeroImage.webp" alt="">
+            </div>
+        </div>
+        <div class="right-div">
+            <p>Tax Benefits up to ₹75,000 under 80D</p>
+            <h3>All health plans cover Covid-19 treatment</h3>
+            <div class="line-left"></div>
+            <div class="number-line">
+                <p style="background-color: rgb(35, 138, 35);">1</p>
+                <hr>
+                <p>2</p>
+                <hr>
+                <p>3</p>
+            </div>
+            <div class="male-female">
+                <div class="male"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9qL5lwRl2KY3JDEuJCQIHvgURbTdmMWU9uA&usqp=CAU"
+                        alt="">
+                    <p>MALE</p>
+                </div>
+                <div class="female"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzrYvIDNqmVb7uAJlxIzuUcres42zGZL39OA&usqp=CAU"
+                        alt="">
+                    <p>FEMALE</p>
+
+                    <div class="input">
+                        <input type="text" placeholder="Enter Full Name">
+                        <input type="number" placeholder="Enter Mobile Number">
+                    </div>
+                    <button>Continue</button>
+                    <div class="privacy-line">
+                        <h6>By clicking on “CONTINUE”, you agree to our <a href="#">Privacy Policy, Terms of Use</a> &
+                            <a href="#">*Disclaimer</a>
+                        </h6>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="bottom-div">
+        <b></b>
+        <h2>Why buy from Policybazaar?</h2><b></b>
+        <div class="content-1">
+            <img src="" alt="">
+            <h3>Platinum insurance partner</h3>
+            <p>Policybazaar is the largest partner for most Health Insurers and a Platinum partner, which means
+            your policy and claims will be treated on a priority</p>
+        </div>
+        <div class="content-2">
+            <img src="" alt="">
+            <h3>Affordable options</h3>
+            <p>We make Health insurance more affordable for you through various monthly payment options and
+                discounts provided by our Partners</p>
+        </div>
+        <div class="content-3">
+            <img src="" alt="">
+            <h3>30 minute claim support*</h3>
+            <p>Our Claim specialists will reach your hospital or home in 30 minutes to support your health
+            insurance claim</p>
+        </div>    
+   </div>
+
+    
+</body>
+</html>
