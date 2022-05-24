@@ -364,7 +364,84 @@ body{
     margin-left: 10%;
 }
 
+/* -----------below navbar section----------------- */
 
+#prdContainer{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 10% 10%;
+    gap: 2.6%;
+}
+.prdCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 18px rgb(52 105 203 / 16%);
+    height: calc(100% - 10px);
+    background: #fff;
+    z-index: 9;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.prdCard p{
+    text-align: center;
+    padding: 5px;
+    font-weight: 400;
+    color: #253858;
+    font-size: 14px;
+    line-height: 15px;
+    /* margin: 0; */
+}
+.prdCard i{
+    background-image: url("https://static.pbcdn.in/cdn/images/homepage-product-icons.png?v=2");
+    background-size: 100%;
+    height: 40px;
+    width: 40px;
+}
+#prdCard14{
+    background-position: 0% 0%;
+}
+#prdCard1{
+    background-position: 0% 4%;
+}
+
+#prdCard2{
+    background-position: 0% 8%;
+}
+#prdCard3{
+    background-position: 0% 11.3%;
+}
+#prdCard4{
+    background-position: 0% 15.2%;
+}
+#prdCard5{
+    background-position: 0% 19.2%;
+}
+#prdCard6{
+    background-position: 0% 22.9%;
+}
+#prdCard7{
+    background-position: 0% 27%;
+}
+#prdCard8{
+    background-position: 0% 31%;
+}
+#prdCard9{
+    background-position: 0% 34.5%;
+}
+#prdCard10{
+    background-position: 0% 38.5%;
+}
+#prdCard11{
+    background-position: 0% 42%;
+}
+#prdCard12{
+    background-position: 0% 46%;
+}
+#prdCard13{
+    background-position: 0% 49.7%;
+}
 
 
 
