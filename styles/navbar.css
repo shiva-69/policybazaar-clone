@@ -65,9 +65,9 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  /* display:none; */
+  display:none;
 }
-#navbarContainer #navbar a:hover #navbarContainer #navbar .navbarLinks #dropdown div{
-  display: flex;
+#navbarContainer #navbar a:hover  #navbarContainer #navbar .navbarLinks #dropdown div{
+  display: block;
   background-color: aqua;
 }

@@ -353,8 +353,60 @@ body{
     /* border: 2px solid black; */
     height: 100%;
     width: 40%;
+}
+#carouselArticle{
+    display: flex;
+}
+#akshayContainer + div{
+    border: 1px solid red;
+    height: 100%;
+    width: 50%;   
+    margin-left: 10%;
+}
 
-*{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -411,8 +463,8 @@ body{
    right: 10px;
    width: 15px;
    height: 15px;
-   /* background: #888; */
-   /* color: #eee; */
+   background: #888;
+   color: #eee;
    border: 1px solid black;
    text-align: center;
    line-height: 15px;
@@ -423,7 +475,7 @@ body{
     
     text-align: center;
     color: #222;
-    /* margin: 10px 0px 20px; */
+    margin: 10px 0px 20px;
     font-size: 25px;
     margin-bottom: 50px;
 
@@ -455,7 +507,7 @@ body{
     border-radius: 5px;
 }
 .popup .form .form-element .button{
-    /* display: flex; */
+    display: flex;
     width: 100%;
     height: 45px;
     border: none;
@@ -467,7 +519,7 @@ body{
     cursor: pointer;
 }
 .popup .form .form-element button{
-    /* display: flex; */
+    display: flex;
     width: 100%;
     height: 45px;
     border: 0.5px solid black;
@@ -486,11 +538,11 @@ body{
     text-decoration: none;
     font-weight: 600;
 } */
-.popup .form .form-element a{
+/* .popup .form .form-element a{
     display: block;
     text-align: center;
     font-size: 15px;
     color: #1a79ca;
     text-decoration: none;
     font-weight: 600;
-}
+} */ 
