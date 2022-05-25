@@ -148,6 +148,19 @@
   color:#146CF7;
   font-weight: 400;
 }
+#signInButton{
+  color:#146CF7;
+  border-radius: 10px;
+  font-weight: 500;
+  border: 1px solid #146CF7;
+  padding: 0 .9%;
+  margin-left: 2%;
+  margin-top: 0;
+  /* margin-bottom:1%; */
+  box-sizing: border-box;
+  /* height: 100%; */
+  cursor: pointer;
+}
 
 
 
