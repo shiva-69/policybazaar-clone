@@ -26,7 +26,7 @@
 
 }
 #pb_grid>div{
-    border: 0.5px solid gray;
+    border: 0.5px solid rgb(211, 208, 208);
     padding: 20px;
     padding-bottom: 50px;
     height: auto;

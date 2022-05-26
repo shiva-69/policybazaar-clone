@@ -1,12 +1,12 @@
-body{
-    background-color: aliceblue;
-}
+
 
 #get_app_container{
     display: flex;
     justify-content: space-between;
     padding: 50px;
     height: 500px;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 #underline{
     width: 12%;
@@ -48,7 +48,7 @@ height: 100%;
     
 }
 
-span{
+#left_part span{
     color: black;
     font-size: 18px;
 }

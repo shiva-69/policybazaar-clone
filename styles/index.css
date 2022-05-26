@@ -580,7 +580,7 @@ body{
     width: 50%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1.25);
     border: 2px solid #cecece;
     background-color: #fff;
     opacity: 0;
@@ -596,6 +596,7 @@ body{
     /* border: 2px solid red; */
     background-color: #fff;
     border-radius: 10px;
+    transform: translate(-50%, -50%) scale(1);
     transition:  top 0ms ease-in-out 0ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 20ms ease-in-out 0ms;
