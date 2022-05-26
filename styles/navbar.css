@@ -1,0 +1,167 @@
+#navbarContainer {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center;  */
+  /* box-sizing: border-box; */
+  height: 10%;
+  width: 100%;
+  /* border: 2px solid red; */
+  margin-top: 1.2%;
+}
+*{
+  font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif;
+}
+.linkDiv {
+  /* display: flex; */
+  margin-left: 20px;
+  /* justify-content: center;
+    align-items: center; */
+  padding: auto 2px 10px 2px;
+  /* border-bottom: 1px solid  */
+}
+.linkDiv svg {
+  height: 15px;
+  width: 15px;
+}
+#logoContainer {
+  /* border: 2px solid blue; */
+  width: 20%;
+  height: 100%;
+  margin-left: 8.8%;
+  margin-right: 18%;
+}
+#logoContainer img {
+  height: 100%;
+  width: 67%;
+  object-fit: cover;
+}
+.linkDiv:hover svg {
+  transition: all 0.2s ease-out ;
+  transform: rotate(-180deg);
+}
+
+.linkDiv {
+  position: relative;
+}
+#dropDown {
+  position: absolute;
+  display: none;
+  left: -344%;
+  top: calc(100% + .65rem); 
+  right: -400%;
+}
+#linkDiv1:hover #dropDown{
+  display: block;
+  z-index: 1000 ; 
+  background-color: white;
+  width: 700%;
+}
+#linkDiv1:hover {
+  border-bottom: 2px solid blue;
+}
+.column{
+  display: flex;
+}
+.dropDownCloumn{
+  margin-left: 90px;
+}
+#dropDownCloumn1{
+  margin-left: 0;
+}
+.dropDownCloumn header{
+  font-weight: 500;
+  color: #146CF7;
+}
+#linkDiv2{
+  position: relative;
+}
+#dropDown2{
+  position: absolute;
+  display: none;
+  top: calc(100% + .65rem)
+  
+}
+#linkDiv2:hover #dropDown2{
+  display: block;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 8px
+}
+#linkDiv2:hover #dropDown2 p{
+  margin: 10px;
+}
+#linkDiv2:hover {
+  border-bottom: 2px solid blue;
+}
+#linkDiv3{
+  position: relative;
+}
+#dropDown3{
+  position: absolute;
+  display: none;
+  top: calc(100% + .65rem);
+  right: -280%;
+  left: 0;
+}
+#linkDiv3:hover #dropDown3{
+  display: block;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 8px
+}
+#linkDiv3:hover #dropDown3 p{
+  margin: 10px;
+}
+#linkDiv3:hover{
+  border-bottom: 2px solid blue;
+}
+
+#linkDiv4{
+  position: relative;
+}
+#dropDown4{
+  position: absolute;
+  display: none;
+  top: calc(100% + .65rem);
+  right: -280%;
+  left: 0;
+}
+#linkDiv4:hover #dropDown4{
+  display: block;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 8px
+}
+#linkDiv4:hover #dropDown4 p{
+  margin: 10px;
+}
+#linkDiv4:hover{
+  border-bottom: 2px solid blue;
+}
+#navbarContainer p{
+  font-weight: 300;
+  font-size:15px;
+  color:#585858;
+}
+#navbarContainer p:hover{
+  color:#146CF7;
+  font-weight: 400;
+}
+#signInButton{
+  color:#146CF7;
+  border-radius: 10px;
+  font-weight: 500;
+  border: 1px solid #146CF7;
+  padding: 0 .9%;
+  margin-left: 2%;
+  margin-top: 0;
+  /* margin-bottom:1%; */
+  box-sizing: border-box;
+  /* height: 100%; */
+  cursor: pointer;
+}
+
+
+
+

@@ -1,0 +1,52 @@
+#pb_container{
+    width: 46%;
+    height: auto;
+    padding-left: 50px;
+    font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    /* font-size: 10px; */
+
+}
+#pb_container>div{
+    width: 12%;
+    height: 3px;
+    background-color: rgb(13, 90, 223);
+}
+#pb_container >p +p{
+    color: rgb(24, 87, 245);
+}
+
+#pb_grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,250px);
+    column-gap: 20px;
+    padding: 50px;
+    padding-top: 20px;
+  
+
+}
+#pb_grid>div{
+    border: 0.5px solid gray;
+    padding: 20px;
+    padding-bottom: 50px;
+    height: auto;
+    font-weight: 100;
+    font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+
+}
+#pb_grid>div>img{
+    width: 50%;
+    height: 50%;
+}
+#pb_grid>div>p{
+    margin-top: -15px;
+    font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+
+}
+#pb_grid>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* height: 200px; */
+}
+#pb_grid>div>h2{
+    font-size: 20px;
+}
