@@ -1,9 +1,15 @@
 
 function cover(){
+
  let data=document.getElementById("pop_up_display")
    // if(data.innerHTML===""){
+      data.innerHTML=""
+
+      // if(data.innerHTML===""){
   
   let get=document.getElementById("cover")
+
+
 
 
    let main_box=document.createElement("div")
@@ -18,6 +24,7 @@ function cover(){
   let box1=document.createElement("div")
   let input1=document.createElement("input")
       input1.setAttribute("type","checkbox")
+      // input1.checked="true"
   let span1=document.createElement("span")
       span1.innerText="Recommended"
 
@@ -26,6 +33,7 @@ function cover(){
   let box2=document.createElement("div")
   let input2=document.createElement("input")
       input2.setAttribute("type","checkbox")
+      // input2.checked="true"
    let span2=document.createElement("span")
      span2.innerText="Below 3 lakhs"
   
@@ -42,33 +50,33 @@ function cover(){
 
      main_box.append(p1,box1,box2,box3)
 
-     let divs=main_box.childNodes
+   //   let divs=main_box.childNodes
      
-     divs.forEach(e=>{
-        let count=-1
-        e.addEventListener("click",function(){
-           count++
-    let all_divs= main_box.childNodes
-   //  console.log(all_divs.sub)
-    all_divs.forEach(e=>{
-   e.style.border="1px solid gray"
-   e.style.color="black"
-   // e.firstChild.checked="uncheck"
-    })
-       if(count%2===0){
-         e.style.border="1px solid green"
-         e.style.color="green"
-         // e.input.style.boxShadow="green"
-       }
-       else{
-          e.style.border="1px solid gray"
-          e.style.color="black" 
-       }
+   //   divs.forEach(e=>{
+   //      let count=-1
+   //      e.addEventListener("click",function(){
+   //         count++
+   //  let all_divs= main_box.childNodes
+   // //  console.log(all_divs.sub)
+   //  all_divs.forEach(e=>{
+   // e.style.border="1px solid gray"
+   // e.style.color="black"
+   // // e.firstChild.checked="uncheck"
+   //  })
+   //     if(count%2===0){
+   //       e.style.border="1px solid green"
+   //       e.style.color="green"
+   //       // e.input.style.boxShadow="green"
+   //     }
+   //     else{
+   //        e.style.border="1px solid gray"
+   //        e.style.color="black" 
+   //     }
 
        
-             console.log(e.innerText)
-        })
-     })
+   //           console.log(e.innerText)
+   //      })
+   //   })
    
      
      let box_below_pop_up=document.createElement("div")
@@ -83,21 +91,47 @@ function cover(){
      
      box_below_pop_up.append(apply,cancel)
 
+     let quickly_find=document.createElement("div")
+     quickly_find.setAttribute("id","quickly_find")
+     let header=document.createElement("h3")
+     header.innerText="Quickly Find"
+     let div1=document.createElement("div")
+     div1.innerText="⭐ Most popular plans"
+     let div2=document.createElement("div")
+     div2.innerText="💰 Lowest Premium Plans"
+
+     quickly_find.append(header,div1,div2)
+
   
-     document.querySelector("#pop_up_display").append(main_box,box_below_pop_up)
-   // }
-   // else{
-   //    document.getElementById("pop_up_display").innerHTML=""
-   // }
-   // let option4=document.createElement("option")
-     
-   // let option5=document.createElement("option")
+     document.querySelector("#pop_up_display").append(quickly_find,main_box,box_below_pop_up)
+
+     let all_divs_of_pop_up_box=main_box.childNodes
+     console.log(all_divs_of_pop_up_box)
+
+     console.log(all_divs_of_pop_up_box.length)
+     for(i=1;i<all_divs_of_pop_up_box.length;i++){
+       all_divs_of_pop_up_box[i].firstChild.addEventListener("change",function(){
+          
+          
+          if(this.checked){
+         
+            this.parentElement.style.border="1px solid orange"
+            this.parentElement.style.color="green"
+          }
+          else{
+             this.parentElement.style.border="1px solid black"
+             this.parentElement.style.color="black"
+          }
+       })
+     }
+ 
+   
 }
 
 function sort(){
    let data=document.getElementById("pop_up_display")
    // if(data.innerHTML===""){
-  
+  data.innerHTML=""
   let get=document.getElementById("sort")
 
 
@@ -180,8 +214,19 @@ function sort(){
      
      box_below_pop_up.append(apply,cancel)
 
+     
+     let quickly_find=document.createElement("div")
+     quickly_find.setAttribute("id","quickly_find")
+     let header=document.createElement("h3")
+     header.innerText="Quickly Find"
+     let div1=document.createElement("div")
+     div1.innerText="⭐ Most popular plans"
+     let div2=document.createElement("div")
+     div2.innerText="💰 Lowest Premium Plans"
+
+     quickly_find.append(header,div1,div2)
   
-     document.querySelector("#pop_up_display").append(main_box,box_below_pop_up)
+     document.querySelector("#pop_up_display").append(quickly_find,main_box,box_below_pop_up)
    // }
    // else{
    //    document.getElementById("pop_up_display").innerHTML=""
@@ -191,7 +236,7 @@ function sort(){
 function plan_type(){
    let data=document.getElementById("pop_up_display")
    // if(data.innerHTML===""){
-  
+  data.innerHTML=""
   let get=document.getElementById("plan_type")
 
 
@@ -274,8 +319,20 @@ function plan_type(){
      
      box_below_pop_up.append(apply,cancel)
 
+     let quickly_find=document.createElement("div")
+     quickly_find.setAttribute("id","quickly_find")
+     quickly_find.style.opacity="0.05"
+     let header=document.createElement("h3")
+     header.innerText="Quickly Find"
+     let div1=document.createElement("div")
+     div1.innerText="⭐ Most popular plans"
+     let div2=document.createElement("div")
+     div2.innerText="💰 Lowest Premium Plans"
+
+     quickly_find.append(header,div1,div2)
+
   
-     document.querySelector("#pop_up_display").append(main_box,box_below_pop_up)
+     document.querySelector("#pop_up_display").append(quickly_find,main_box,box_below_pop_up)
    
    // else{
    //    document.getElementById("pop_up_display").innerHTML=""
