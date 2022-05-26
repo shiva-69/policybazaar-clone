@@ -1,77 +1,68 @@
 {
   "plan": [
     {
-        "id":1,
-      "image":"https://static.pbcdn.in/term-cdn/images/images/insurer/SBI_logo.png",
-      "lifeCover":25,
-      "CovertillAge":35,
-      "claimSetteld":94.5,
-      "price":794
-
+      "id": 1,
+      "image": "https://static.pbcdn.in/term-cdn/images/images/insurer/SBI_logo.png",
+      "lifeCover": 25,
+      "CovertillAge": 35,
+      "claimSetteld": 94.5,
+      "price": 794
     },
     {
-        "id":2,
-      "image":"https://static.pbcdn.in/term-cdn/images/images/insurer/Edelweiss_Tokio_logo.png",
-      "lifeCover":25,
-      "CovertillAge":35,
-      "claimSetteld":97,
-      "price":498
-
+      "id": 2,
+      "image": "https://static.pbcdn.in/term-cdn/images/images/insurer/Edelweiss_Tokio_logo.png",
+      "lifeCover": 25,
+      "CovertillAge": 35,
+      "claimSetteld": 97,
+      "price": 498
     },
     {
-        "id":3,
-      "image":"https://static.pbcdn.in/term-cdn/images/images/insurer/ICICI_logo.png",
-      "lifeCover":25,
-      "CovertillAge":35,
-      "claimSetteld":97.9,
-      "price":519
-
+      "id": 3,
+      "image": "https://static.pbcdn.in/term-cdn/images/images/insurer/ICICI_logo.png",
+      "lifeCover": 25,
+      "CovertillAge": 35,
+      "claimSetteld": 97.9,
+      "price": 519
     },
     {
-        "id":4,
-      "image":"https://static.pbcdn.in/term-cdn/images/images/insurer/HDFC_Life_logo.png",
-      "lifeCover":25,
-      "CovertillAge":35,
-      "claimSetteld":97,
-      "price":1138
-
+      "id": 4,
+      "image": "https://static.pbcdn.in/term-cdn/images/images/insurer/HDFC_Life_logo.png",
+      "lifeCover": 25,
+      "CovertillAge": 35,
+      "claimSetteld": 97,
+      "price": 1138
     },
     {
-        "id":5,
-      "image":"https://static.pbcdn.in/term-cdn/images/images/insurer/PNB_Metlife_logo.png",
-      "lifeCover":25,
-      "CovertillAge":35,
-      "claimSetteld":98.2,
-      "price":580
-
+      "id": 5,
+      "image": "https://static.pbcdn.in/term-cdn/images/images/insurer/PNB_Metlife_logo.png",
+      "lifeCover": 25,
+      "CovertillAge": 35,
+      "claimSetteld": 98.2,
+      "price": 580
     },
     {
-        "id":6,
-      "image":"https://static.pbcdn.in/term-cdn/images/images/insurer/exide_logo.png",
-      "lifeCover":25,
-      "CovertillAge":35,
-      "claimSetteld":98.5,
-      "price":750
-
+      "id": 6,
+      "image": "https://static.pbcdn.in/term-cdn/images/images/insurer/exide_logo.png",
+      "lifeCover": 25,
+      "CovertillAge": 35,
+      "claimSetteld": 98.5,
+      "price": 750
     },
     {
-        "id":7,
-      "image":"https://static.pbcdn.in/term-cdn/images/images/insurer/Bharti_Axa_logo.pngng",
-      "lifeCover":25,
-      "CovertillAge":35,
-      "claimSetteld":99.1,
-      "price":673
-
+      "id": 7,
+      "image": "https://static.pbcdn.in/term-cdn/images/images/insurer/Bharti_Axa_logo.png",
+      "lifeCover": 25,
+      "CovertillAge": 35,
+      "claimSetteld": 99.1,
+      "price": 673
     },
-
     {
-        "id":8,
-      "image":"https://static.pbcdn.in/term-cdn/images/images/insurer/Aegon_Religare_logo.png",
-      "lifeCover":25,
-      "CovertillAge":35,
-      "claimSetteld":99.3,
-      "price":726
-
+      "id": 8,
+      "image": "https://static.pbcdn.in/term-cdn/images/images/insurer/Aegon_Religare_logo.png",
+      "lifeCover": 25,
+      "CovertillAge": 35,
+      "claimSetteld": 99.3,
+      "price": 726
     }
   ],
   "user": [
