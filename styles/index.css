@@ -358,11 +358,128 @@ body{
     display: flex;
 }
 #akshayContainer + div{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
-    width: 50%;   
-    margin-left: 10%;
+    width: 54%;   
+    margin-left: 5%;
 }
+#carousel span{
+    color:#FF991F;
+    letter-spacing: -0.5px;
+    background-color:#FEF8D8 ;
+    font-size: 13px;
+    font-weight: 500;
+    /* margin-left: 2%; */
+    padding: 2%;
+    font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+}
+#carousel p{
+    margin: 0;
+}
+#carousel p:nth-child(2){
+    font-weight: 350;
+    /* background-color: #0065FF; */
+    margin-top: 10%;
+    font-size: 16px;
+    font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+}
+#carousel p:nth-child(3){
+    font-size: 20px;
+    color: #FF5630;
+    font-weight: 500;
+    margin-top: 3px;
+    font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+}
+#carousel button{
+    background-color:#0663F6;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    height: 2.5rem;
+    width: 54%;
+    border-radius: 6px;
+    margin-top: 8%;
+}
+
+#carousel2 span{
+    color:#00A3BF;
+    background-color: #E6FCFF;
+    padding: auto 4px;
+    font-weight: 500;
+}
+#carousel2 p:nth-child(2){
+    font-size: 120%;
+}
+#carousel3 span{
+    color: #649062;
+    background-color: #EBFEEA;
+    padding: 6px 10px;
+}
+#carousel3 p:nth-child(2){
+    font-size: 130%;
+    font-weight: 500;
+    color: #2e3e5e;
+    font-family:Roboto,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    letter-spacing: 0;
+}
+#carousel3 p:nth-child(3){
+    font-weight: 400;
+    color: #283756;
+}
+#carousel #viewPlans{
+    width: 39%;
+}
+/* #carousel{
+    position: relative;
+}
+#carousel1, #carousel2, #carousel3{
+    position: absolute;
+} */
+
+/* #carousel1, #carousel2, #carousel3{  
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+      
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+} */
+
+/* #carousel1, #carousel2, #carousel3 {
+    animation: 3s slide-left;
+  }
+  @keyframes slide-left {
+    from {
+      margin-left: 0%;
+      margin-bottom: auto;
+    }
+    to {
+      margin-left: -100%;
+      margin-bottom: auto;
+    }
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -----------below navbar section----------------- */
 

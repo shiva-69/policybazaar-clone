@@ -4,7 +4,6 @@ const setClass = () => {
     modal.setAttribute("class", "active");
     let popup = document.getElementById("popup");
     popup.setAttribute("class", "active");
-    console.log("clicked")
 }
 document.getElementById("signInButton").addEventListener("click", setClass);
 document.getElementById("prdCard1").addEventListener("click", setClass);
@@ -13,5 +12,23 @@ document.getElementById("closesignin").addEventListener("click", ()=>{
     modal.classList.remove("active");
     let popup = document.getElementById("popup");
     popup.classList.remove("active");
-    console.log("clicked")
 }) 
+
+
+
+
+let timer;
+let slideIndex = 0;
+const slideshow = () => {
+    let slides = document.getElementsByClassName("carouselDivs");
+    console.log(slides)
+    for(let i = 0; i < slides.length; i++){
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if(slideIndex > slides.length) slideIndex = 1;
+    slides[slideIndex-1].style.display = "block"; 
+    timer = setTimeout(slideshow, 4000);
+}
+
+slideshow();
