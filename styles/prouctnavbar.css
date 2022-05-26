@@ -1,0 +1,26 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 70%;
+    margin: auto;
+}
+.nav>div>img{
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+}
+.nav>div>div{
+    display: flex;
+    float: left;
+}
+
+.nav>div>div>img{
+   cursor: pointer;
+}
+
+
+#claim{
+    margin-top: -20px;
+    cursor: pointer;
+}
