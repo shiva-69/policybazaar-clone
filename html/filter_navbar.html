@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Navbar</title>
+    <link rel="stylesheet" href="../styles/filter_navbar.css">
+</head>
+<body>
+    <div id="filter_navbar_box">
+    <div id="first">Quick filters</div>
+    <div id="center" >
+        <div id="cover" onclick="cover()" >Cover</div>
+        <div id="discount" onclick="discount()" >Discount</div>
+        <div id="sort" onclick="sort()">Sort by</div>
+        <div id="no_room" onclick="no_room()" >No room rent</div>
+        <div id="crore_cover" onclick="crore_cover" >1 crore cover</div>
+        <div id="plan_type" onclick="plan_type()" >Plan type</div>
+        <div id="insurer" onclick="insurer()" >insurer</div>
+    </div>
+    <div id="last">
+       <img src="../Photos/filter_icon-icons.com_64590.png"/>
+       <span>All filters</span> 
+    </div>
+    </div>
+
+   
+
+    <!-- <div id="below_navbar"> -->
+    <div id="pop_up_display">
+        <!-- box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; -->
+        <!-- <input type="checkbox"/> -->
+        <div id="quickly_find">
+            <h3>Quickly Find</h3>
+            <div id="most_popular_plans" onclick="most_popular()">⭐ Most popular plans</div>
+           <!-- <hr> -->
+            <div id="lowest_premium" onclick="lowesr_premium()">💰 Lowest Premium Plans</div>
+        </div>
+    </div>
+ 
+  <!-- </div> -->
+    <!-- <div id="below_pop_up"></div> -->
+</body>
+</html>
+<script src="../scripts/filter_navbar.js"></script>
