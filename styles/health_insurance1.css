@@ -1,0 +1,286 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+#main-div {
+  
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    padding-top: 0px;
+
+}
+
+p {
+    margin-left: 15px;
+    margin-top: -1px;
+    /* color: white; */
+}
+
+.line {
+    margin-top: -5px;
+    line-height: 25px;
+    color: rgb(66, 65, 65);
+    font-weight: lighter;
+}
+
+.img-url img {
+    width: 90%;
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 105%;
+    margin:-8px;
+   
+    /* border: 1px solid black; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.navbar div
+{
+    width: 35%;
+    height: 90%;
+
+}
+.navbar >div+div{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10%;
+}
+.navbar >div+div img{
+margin-top: 10px;
+width: 35%;
+height: 50%;
+}
+
+.navbar img{
+    margin-top: 7px;
+    width: 60%;
+    height: 65%;
+}
+
+#main-div .right-div {
+    margin-top: 39px;
+    /* margin-left: 100px; */
+}
+
+#main-div .right-div p {
+    margin-left: -2px;
+    margin-bottom: -12px;
+    font-size: 18px;
+}
+
+#main-div .right-div .line-left {
+    width: 10%;
+    height: 3px;
+    background-color: rgb(249, 155, 40);
+    margin-top: -5px;
+}
+
+.number-line {
+    display: flex;
+    margin-top: 20px;
+    width: 90%
+}
+#para2{
+    color: black;
+}
+.number-line :last-child{
+    color: black;
+}
+
+hr {
+    width: 40%;
+    border: 0.1px solid #aaa;
+
+}
+
+.number-line p {
+
+    top: 10px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    /* background: #888; */
+    color: #aaa;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.male-female {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.male {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    background-color:white;
+    /* opacity: 0.2; */
+}
+
+.female {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.male-female .male img {
+    width: 40px;
+    margin-left: 30px;
+    margin-top: 9px;
+}
+
+.male-female .female img {
+    width: 40px;
+    margin: auto;
+    margin-left: 26px;
+    margin-top: 9px;
+}
+
+.male-female p {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(139, 135, 135);
+}
+
+
+input[type="number"],
+input[type="text"] {
+
+    /* font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 15px; */
+    padding: 17px;
+    /* outline: none; */
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 65%;
+    height: 45px;
+    /* margin: auto; */
+    background-color: rgb(254, 113, 61);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+h6 {
+    margin-left: -25px;
+    width: 500px;
+    color: #aaa;
+
+}
+
+h6 a {
+    text-decoration: none;
+}
+
+.bottom-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    height: auto;
+
+    margin: auto;
+}
+
+
+
+.bottom-div b {
+    width: 300px;
+    height: 0px;
+    border: 0.1px solid rgb(190, 187, 187);
+    margin-top: 30px;
+}
+
+
+.bottom-div h2 {
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.content-div h3 {
+    color: black;
+
+}
+.content-1{
+    text-align: center;
+}
+.content-2{
+    text-align: center;
+}
+.content-3{
+    text-align: center;
+}
+#heading{
+    font-size: 25px;
+}
+#heading +h3{
+    font-size: 22px;
+}
+.number-line>p{
+    color: white;
+    /* font-size: 2px; */
+    padding: 3px;
+    
+}
+
+
+.right-div>div{
+  /* margin: 0px; */
+    width: 100%;
+}
+.left-div{
+    margin-top: 40px;
+    width: 45%;
+    /* border: 1px solid red; */
+}
+.privacy-line{
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-left: 10%;
+    padding-left: 40px;
+}
+#button>button{
+  margin: auto;
+  margin-left: 25%;
+}
+#down_part{
+    /* margin-top: 50px; */
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    row-gap: 25px;
+    flex-direction: column;
+}
+#top_part{
+    margin-top: 3%;
+}

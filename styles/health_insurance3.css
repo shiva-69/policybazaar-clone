@@ -1,0 +1,214 @@
+body {
+    /* color: gray; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.main-div {
+    display: flex;
+   justify-content: space-evenly;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    width: 80%;
+    margin: auto;
+
+}
+
+.main-div .left-div .p-content {
+    width: 260px;
+    height: 25px;
+    margin-top: -10px;
+    margin-left: 10px;
+    background-color: rgb(77, 169, 77);
+}
+
+p {
+    margin-left: 15px;
+    margin-top: -1px;
+    /* color: white; */
+}
+
+.line {
+    margin-top: -5px;
+    line-height: 25px;
+    color: rgb(66, 65, 65);
+    font-weight: lighter;
+}
+
+.img-url img {
+    width: 450px;
+}
+.main-div .right-div .line-left {
+    width: 90px;
+    height: 3px;
+    background-color: rgb(249, 155, 40);
+    margin-top: -5px;
+}
+.right-div .p-tag{
+    font-size: 25px;
+    margin-left: -5px;
+    margin-top: 50px;
+    margin-bottom: -18px;
+}
+
+.number-line {
+    display: flex;
+    margin-top: 20px;
+    width: 600px;
+    margin-left:-15px ;
+}
+
+hr {
+    width: 40%;
+    /* border: 0.1px solid #aaa; */
+   height: 1px;
+  
+}
+#hr1,#hr2{
+    background-color:rgb(35, 138, 35);
+}
+.number-line p {
+
+    top: 10px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    /* background: #888; */
+    color: white;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#last{
+    color: black;
+}
+.male-female {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+
+}
+
+.male{
+    border: 1px solid black;
+    height: 80px;
+    width: 180px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    /* padding-top: 5px; */
+   
+}
+
+
+.female {
+    border: 1px solid black;
+    height: 80px;
+    width: 180px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: black;
+}
+
+.male-female .male img {
+    width: 40px;
+    margin-top: 5px;
+    /* margin-left: 60px;
+    margin-top: 9px; */
+    display: flex;
+    margin: auto;
+}
+
+.male-female .female img {
+    width: 40px;
+    display: flex;
+    margin: auto;
+    
+   
+    margin-top: 9px; 
+}
+
+.male-female p {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(139, 135, 135);
+}
+#button{
+    width: 60%;
+    height: 50px;
+    margin: auto;
+    margin-top: -10px;
+}
+#button button{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    background-color: orangered;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    
+}
+#select_age{
+    width: 50%;
+    height: 60px;
+    margin-top: 20px;
+    color: orangered;
+    font-size: 12px;
+    /* padding: 20px; */
+    /* border: 1px solid black; */
+}
+#select_age select{
+    width: 100%;
+    height: 100%;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    text-align: center;
+    /* padding: 20px; */
+}
+#enter_pin_code{
+    width: 50%;
+    height: 40px;
+    /* border: 1px solid black; */
+    color: orangered;
+    font-size: 12px;
+}
+#enter_pin_code input{
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+    padding: 10px;
+    border: 1px solid orangered;
+    border-radius: 8px;
+    /* font-size: 12px; */
+
+}
+#popular_cities{
+    color: gray;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,30px);
+    gap: 10px;
+}
+#popular_cities div{
+    border: 1px solid gray;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+
+}
+#popular_cities:hover{
+    cursor: pointer;
+}
+
+.right-div{
+    margin-top: -15px;
+}
+.left-div{
+    margin-top: 20px;
+}
+
+

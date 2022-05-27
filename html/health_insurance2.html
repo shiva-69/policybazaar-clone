@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/health_insurance2.css"/>
+    <style>
+        
+.navbar {
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 60px;
+width: 105%;
+margin:-8px;
+
+/* border: 1px solid black; */
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.navbar div{
+width: 35%;
+height: 90%;
+
+/* text-align: center; */
+/* border: 1px solid black; */
+}
+.navbar >div+div{
+display: flex;
+flex-direction: row-reverse;
+margin-right: 10%;
+}
+.navbar >div+div img{
+margin-top: 10px;
+width: 35%;
+height: 50%;
+}
+
+
+.navbar img{
+margin-top: 7px;
+width: 60%;
+height: 65%;
+}
+
+    </style>
+    <!-- <link rel="stylesheet" href="../styles/health_insurance1.css"/> -->
+</head>
+<body>
+
+    <div class="navbar">
+        <div id="image_div"><img src="https://static.pbcdn.in/myaccount-cdn/images/login-logo.svg"/></div>
+        <div id="call_us"><img src="../Photos/callus_logo.png"/></div>
+        <!-- <div class="call"><i class="fa-solid fa-headset"></i> </div> -->
+    </div>
+
+
+<div class="main-div">
+
+    <div class="left-div">
+
+        <h3 style="margin-left: 10px;">Why buy from Policybazaar?</h3>
+        <div class="p-content">
+            <p>Get up to 15% Online discount**</p>
+        </div>
+
+        <div class="line">
+            <ul>
+                <li>30 minutes claim support*</li>
+                <li>All Covid-19 Treatments covered</li>
+                <li>Instant Purchase, No Medicals Required</li>
+                <li>Tax Benefits upto ₹ 75,000 under Sec. 80D</li>
+            </ul>
+        </div>
+
+        <div class="img-url">
+            <img src="https://static.pbcdn.in/health-cdn/images/prelead/images/leftHeroImage.webp" alt="">
+        </div>
+
+    </div>
+
+    <div class="right-div">
+
+        <p class="p-tag">Tell us who would you </p>
+        <h2>Like to Insure</h2>
+        <div class="line-left"></div>
+        <div class="number-line">
+            <p style="background-color: rgb(35, 138, 35);">✓</p>
+            <hr id="hr1">
+            <p style="background-color: rgb(35, 138, 35);">2</p>
+            <hr id="hr2">
+            <p id="last">3</p>
+        </div>
+
+        <div class="male-female">
+
+            <div class="female" ><img
+                    src="../Photos/business-person-silhouette-wearing-tie.png"
+                    alt=""/>
+                <p>Me</p>
+            </div>
+
+           <div class="female">
+            <img src="../Photos/couple-users-silhouette.png" alt="">
+                <p>Me + My Wife</p>
+            </div>
+
+            <div class="female"><img
+                src="../Photos/family-silhouette.png"
+                alt="">
+            <p>Me + My Wife & 1 Child</p>
+            </div>
+
+            <div class="female"><img
+            src="../Photos/group-of-users-silhouette.png"
+            alt="">
+             <p>Me + My Wife & 2 Child</p>
+            </div>
+
+            <div class="female"><img
+            src="../Photos/users (1).png"
+            alt="">
+            <p>My Parents</p>
+            </div>
+
+            <div class="female">
+                <img
+             src="../Photos/plus.png"
+             alt=""/>
+            <p>Others</p>
+            </div>
+
+        </div>
+         <div id="select_age">
+             
+         </div>
+     
+        <div id="button"><button id="continue_button">Continue</button></div>
+
+    </div>
+
+</div>
+</body>
+</html>
+
+<script src="../scripts/health_insurance2.js"></script>
