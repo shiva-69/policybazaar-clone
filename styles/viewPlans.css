@@ -4,7 +4,9 @@
 }
 
 /* ------------------navbar----------------- */
-
+button{
+    cursor: pointer;
+}
 #navbarContainer {
     display: flex;
     /* border: 1px solid red; */
@@ -26,7 +28,7 @@
 
 #logoContainer img {
     height: 10%;
-    width: 50%;
+    width: 48%;
     margin-left: 33%;
     margin-bottom: 1.5%;
     margin-top: 1.5%;
@@ -111,11 +113,13 @@
     display: flex;
     border: 1px solid rgb(165, 159, 159);
     border-radius: 17px;
-    padding: 0.5% 0.8%;
+    padding: 0.7% 1%;
     color: hsl(218, 41%, 25%);
     margin-left: 1.6%;
     cursor: pointer;
-    /* font-size: 13px; */
+    font-size: 13px;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 #filterContainer img {
@@ -131,8 +135,10 @@
     border: none;
 }
 
-#allfilters {
-    margin-left: 4%;
+#filterContainer #allfilters {
+    margin-left: 4.5%;
+    padding-left: 2%;
+    padding-right: 1%;
 }
 
 #allfilters img {
@@ -256,7 +262,7 @@
 #onecrore:hover,
 #sixlakh:hover {
     color: #36b37e;
-    border: 2px solid #36b37e;
+    border: 1px solid #36b37e;
     font-weight: 500;
 }
 
@@ -266,7 +272,7 @@
 #onecrore:hover span,
 #sixlakh:hover span {
     color: #36b37e;
-    border: 2px solid #36b37e;
+    border: 1px solid #36b37e;
     font-weight: 500;
 }
 
@@ -294,8 +300,9 @@ section {
 
 .leftData {
     display: flex;
-    width: 65%;
+    width: 70%;
     flex-direction: column;
+    order: 1;
     /* overflow-y: scroll; */
     /* border: 1px solid blue; */
 }
@@ -307,7 +314,7 @@ section {
     box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
     box-sizing: border-box;
     height: 10rem;
-    padding-bottom: 3%;
+    padding-bottom: 4%;
     padding-left: 2%;
     padding-top: 2%;
     border-radius: 5px;
@@ -364,7 +371,9 @@ section {
     font-size: 12px;
     color: #505f79;
 }
-
+.detailContainer .detail2{
+    margin-left: 6px;
+}
 .detailContainer p:nth-child(5) {
     border: none;
     color: #36b37e;
@@ -375,6 +384,7 @@ section {
 
 .rightData {
     width: 25%;
+    order: 2;
     /* border: 1px solid black; */
 }
 
@@ -461,8 +471,11 @@ section {
 #quicklyFind {
     /* border: 1px solid red; */
     padding: 2%;
-    padding-top: 0;
+    padding-top: 2%;
     box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    position: sticky;
+    top: 120px;
+
 }
 
 #quicklyFind header {
@@ -500,6 +513,8 @@ section {
     height: 200px;
     padding: 2% 4%;
     box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    position: sticky;
+    top: 330px;
 }
 
 #shortlistedPlans header {

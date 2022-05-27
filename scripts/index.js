@@ -6,7 +6,9 @@ const setClass = () => {
     popup.setAttribute("class", "active");
 }
 document.getElementById("signInButton").addEventListener("click", setClass);
-document.getElementById("prdCard1").addEventListener("click", setClass);
+document.getElementById("prdCard1").addEventListener("click", () => {
+    window.location.href = "../html/health_insurance1.html";
+});
 document.getElementById("closesignin").addEventListener("click", ()=>{
     let modal = document.getElementById("modal");
     modal.classList.remove("active");

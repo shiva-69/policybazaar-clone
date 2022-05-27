@@ -99,6 +99,7 @@
       "p2" : "₹3 Lakh No Claim Bonus",
       "p3": "Restoration of cover once a year", 
       "p4" :"View all features" ,
+      "price": 5,
       "cover" : 
       "₹5 Lakhs" ,
       "premium" : {
@@ -114,6 +115,7 @@
       "p2" : "₹5 Lakh No Claim Bonus",
       "p3": "Unlimited Restoration of cover", 
       "p4" :"View all features" ,
+      "price": 100,
       "cover" : 
       "₹1 Crore" ,
       "premium" : {
@@ -129,6 +131,7 @@
       "p2" : "₹25,000 Lakh No Claim Bonus",
       "p3": "Restoration of cover once a year", 
       "p4" :"View all features" ,
+      "price": 5,
       "cover" : 
       "₹5 Lakh" ,
       "premium" : {
@@ -144,6 +147,7 @@
       "p2" : "₹55,000 No Claim Bonus",
       "p3": "Restoration of cover once a year", 
       "p4" :"View all features" ,
+      "price": 5.5,
       "cover" : 
       "₹5.5 Lakh" ,
       "premium" : {
@@ -159,6 +163,7 @@
       "p2" : "₹1 Lakh No Claim Bonus",
       "p3": "Restoration of cover once a year", 
       "p4" :"View all features" ,
+      "price": 100,
       "cover" : 
       "₹1 crore" ,
       "premium" : {
@@ -174,6 +179,7 @@
       "p2" : "₹2.5 Lakh No Claim Bonus",
       "p3": "Restoration of cover once a year", 
       "p4" :"View all features" ,
+      "price": 5,
       "cover" : 
       "₹5 Lakh" ,
       "premium" : {

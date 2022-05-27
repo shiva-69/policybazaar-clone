@@ -13,6 +13,9 @@
   font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     "Helvetica Neue", Arial, sans-serif;
 }
+button{
+  cursor: pointer;
+}
 .linkDiv {
   /* display: flex; */
   margin-left: 20px;
