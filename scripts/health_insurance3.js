@@ -23,7 +23,7 @@ all_boxes.forEach(e=>{
             select.append(p)
         }
        let para=document.createElement("p")
-       para.innerText="Required"
+       para.innerText="* Required"
         document.getElementById("select_age").append(select,para)
 
         }
@@ -61,3 +61,6 @@ all_cities.forEach(e=>{
     })
 })
 // }
+function homepage(){
+    window.location.href="../index.html"
+}

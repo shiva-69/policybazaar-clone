@@ -45,3 +45,7 @@ document.getElementById("continue_button").addEventListener("click",function(){w
 function save_name(){
     let 
 }
+
+function homepage(){
+    window.location.href="../index.html"
+}
