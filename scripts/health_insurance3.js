@@ -35,4 +35,29 @@ all_boxes.forEach(e=>{
     })
 })
 
+document.getElementById("continue_button").addEventListener("click",function(){window.location.href="./health_insurance4.html"})
 
+// function select_city(){
+let all_cities=document.querySelectorAll("#popular_cities div")
+console.log(all_cities)
+
+all_cities.forEach(e=>{
+    e.addEventListener("click",function(){
+
+        all_cities.forEach(e=>{
+            e.style.backgroundColor="white"
+        })
+
+        if(e.style.backgroundColor==="white")
+        {
+        e.style.backgroundColor="orange"
+        }
+        else{
+            e.style.backgroundColor="white"
+        }
+        document.getElementById("enter_city").value=e.innerText
+        document.getElementById("enter_city").style.border="1px solid green"
+        document.getElementById("required").innerText=""
+    })
+})
+// }

@@ -30,6 +30,7 @@ height: 90%;
 .navbar >div+div{
 display: flex;
 flex-direction: row-reverse;
+margin-right: 10%;
 }
 .navbar >div+div img{
 margin-top: 10px;
@@ -95,9 +96,9 @@ height: 65%;
 
         <div id="enter_pin_code">
 
-           <input type="text" placeholder="Enter City or PIN Code"/>
+           <input id="enter_city"  type="text" placeholder="Enter City or PIN Code"/>
            <div></div>
-           <p>Required</p>
+           <p id="required">Required</p>
         </div>
     </br>
     </br></br>
@@ -119,7 +120,7 @@ height: 65%;
         </br></br>
 
      
-        <div id="button"><button value="Continue">Continue</button></div>
+        <div id="button"><button id="continue_button">Continue</button></div>
 
     </div>
 

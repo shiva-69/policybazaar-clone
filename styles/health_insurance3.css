@@ -197,6 +197,11 @@ hr {
     border: 1px solid gray;
     border-radius: 20px;
     text-align: center;
+    background-color: white;
+
+}
+#popular_cities:hover{
+    cursor: pointer;
 }
 
 .right-div{
@@ -205,3 +210,5 @@ hr {
 .left-div{
     margin-top: 20px;
 }
+
+

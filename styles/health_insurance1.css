@@ -42,16 +42,16 @@ p {
     /* border: 1px solid black; */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.navbar div{
+.navbar div
+{
     width: 35%;
     height: 90%;
-   
-    /* text-align: center; */
-    /* border: 1px solid black; */
+
 }
 .navbar >div+div{
     display: flex;
     flex-direction: row-reverse;
+    margin-right: 10%;
 }
 .navbar >div+div img{
 margin-top: 10px;
@@ -59,23 +59,15 @@ width: 35%;
 height: 50%;
 }
 
-
 .navbar img{
     margin-top: 7px;
     width: 60%;
     height: 65%;
 }
 
-.call {
-    display: flex;
-    width: 150px;
-    height: 50px;
-    font-size: 25px;
-}
-
 #main-div .right-div {
     margin-top: 39px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
 #main-div .right-div p {
@@ -85,7 +77,7 @@ height: 50%;
 }
 
 #main-div .right-div .line-left {
-    width: 90px;
+    width: 10%;
     height: 3px;
     background-color: rgb(249, 155, 40);
     margin-top: -5px;
@@ -94,7 +86,13 @@ height: 50%;
 .number-line {
     display: flex;
     margin-top: 20px;
-    width: 600px;
+    width: 90%
+}
+#para2{
+    color: black;
+}
+.number-line :last-child{
+    color: black;
 }
 
 hr {
@@ -181,8 +179,9 @@ input[type="text"] {
 }
 
 button {
-    width: 350px;
+    width: 65%;
     height: 45px;
+    /* margin: auto; */
     background-color: rgb(254, 113, 61);
     border-radius: 5px;
     cursor: pointer;

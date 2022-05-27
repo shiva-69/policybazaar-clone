@@ -43,7 +43,7 @@ p {
 .right-div .p-tag{
     font-size: 25px;
     margin-left: -5px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: -18px;
 }
 
@@ -108,6 +108,10 @@ hr {
     border-radius: 5px;
     margin-top: 20px;
     color: black;
+    background-color: white;
+}
+.female:hover{
+    cursor: pointer;
 }
 
 .male-female .male img {
@@ -165,4 +169,10 @@ hr {
     border-radius: 5px;
     text-align: center;
     /* padding: 20px; */
+}
+.right-div{
+    margin-top: 50px;
+}
+.left-div{
+    margin-top: 40px;
 }
