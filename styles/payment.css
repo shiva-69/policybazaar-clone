@@ -57,7 +57,7 @@ button{
     margin: auto;
     margin-top: 50px;
     height: 900px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     /* flex-direction: column; */
     justify-content: space-between;
@@ -66,7 +66,7 @@ button{
 #fill_details{
     width: 60%;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -75,7 +75,7 @@ button{
 #fill_details>div{
     height: 7%;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* display: flex; */
 
 }
@@ -87,9 +87,16 @@ color: gray;
     display: flex;
     justify-content: space-between;
 }
-#name input{
+#name input {
     width: 45%;
     height: 90%;
+    border: 1px solid red;
+    padding-left: 8px;
+    
+}
+#maritial_status{
+    width: 45%;
+    height: 99%;
     border: 1px solid red;
     padding-left: 8px;
     
