@@ -21,13 +21,14 @@
     opacity: 0.6px;
     display: flex;
     /* flex-direction: row-reverse; */
-} 
+
 #center>div{
 border: 1px solid black;
 border-radius: 10px;
 width: 10%;
 padding: 10px;
 text-align: center;
+background-color:white;
 }
 #last>img{
     width: 20px;
@@ -81,7 +82,7 @@ width: 70%;
 
 #box_below_pop_up{
      /* position: absolute; */
-     position: absolute;
+     /* position: absolute; */
     z-index: 1; 
     width: 28.2%;
     height: 50px;
