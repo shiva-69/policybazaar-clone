@@ -89,5 +89,100 @@
       "number": "2151262162",
       "id": 2
     }
+  ],
+  "viewPlans": [
+    {
+      "img" : 	"https://static.pbcdn.in/health-cdn/images/insurer-logo/Care_Health@2x.webp",
+      "header" : 
+      "NCB Super Premium",
+      "p1" : "Single pvt AC Room",
+      "p2" : "₹3 Lakh No Claim Bonus",
+      "p3": "Restoration of cover once a year", 
+      "p4" :"View all features" ,
+      "cover" : 
+      "₹5 Lakhs" ,
+      "premium" : {
+        "monthly" : "₹673/month",
+        "yearly" : "₹8,066 annually"
+      }
+
+    },
+    {
+      "img" : 	"https://static.pbcdn.in/health-cdn/images/insurer-logo/Niva_Bupa_(formerly_known_as_Max_Bupa)@2x.png",
+      "header" :"Max Saver",
+      "p1" : "No Room Rent Limit",
+      "p2" : "₹5 Lakh No Claim Bonus",
+      "p3": "Unlimited Restoration of cover", 
+      "p4" :"View all features" ,
+      "cover" : 
+      "₹1 Crore" ,
+      "premium" : {
+        "monthly" : "₹756/month",
+        "yearly" : "₹9,061 annually"
+      }
+
+    },
+    {
+      "img" : 	"https://static.pbcdn.in/health-cdn/images/insurer-logo/Star_Health@2x.webp",
+      "header" :"Medi Classic",
+      "p1" : "No Room Rent Limit",
+      "p2" : "₹25,000 Lakh No Claim Bonus",
+      "p3": "Restoration of cover once a year", 
+      "p4" :"View all features" ,
+      "cover" : 
+      "₹5 Lakh" ,
+      "premium" : {
+        "monthly" : "₹590/month",
+        "yearly" : "₹7,074 annually"
+      }
+
+    },
+    {
+      "img" : "https://static.pbcdn.in/health-cdn/images/insurer-logo/Care_Health@2x.png",
+      "header" :"Care",
+      "p1" : "Single Pvt AC room",
+      "p2" : "₹55,000 No Claim Bonus",
+      "p3": "Restoration of cover once a year", 
+      "p4" :"View all features" ,
+      "cover" : 
+      "₹5.5 Lakh" ,
+      "premium" : {
+        "monthly" : "₹630/month",
+        "yearly" : "₹7,551 annually"
+      }
+
+    },
+    {
+      "img" : "https://static.pbcdn.in/health-cdn/images/insurer-logo/Niva_Bupa_(formerly_known_as_Max_Bupa)@2x.png",
+      "header" :"1 Cr Super Saver",
+      "p1" : "Single Pvt AC room",
+      "p2" : "₹1 Lakh No Claim Bonus",
+      "p3": "Restoration of cover once a year", 
+      "p4" :"View all features" ,
+      "cover" : 
+      "₹1 crore" ,
+      "premium" : {
+        "monthly" : "₹916/month",
+        "yearly" : "₹10,992 annually"
+      }
+
+    },
+    {
+      "img" : "https://static.pbcdn.in/health-cdn/images/insurer-logo/Tata_AIG@2x.png",
+      "header" :"MediCare",
+      "p1" : "No Room Rent Limit",
+      "p2" : "₹2.5 Lakh No Claim Bonus",
+      "p3": "Restoration of cover once a year", 
+      "p4" :"View all features" ,
+      "cover" : 
+      "₹5 Lakh" ,
+      "premium" : {
+        "monthly" : "₹662/month",
+        "yearly" : "₹7,934 annually"
+      }
+
+    }
   ]
 }
+
+
