@@ -28,7 +28,7 @@ all_boxes.forEach(e=>{
             select.append(p)
         }
        let para=document.createElement("p")
-       para.innerText="Required"
+       para.innerText="* Required"
 
        select.addEventListener("change",function(){
            select.style.border="1px solid green"
@@ -47,3 +47,6 @@ all_boxes.forEach(e=>{
 
 document.getElementById("continue_button").addEventListener("click",function(){window.location.href="./health_insurance3.html"})
 
+function homepage(){
+    window.location.href="../index.html"
+}

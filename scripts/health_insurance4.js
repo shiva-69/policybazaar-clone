@@ -1,5 +1,8 @@
-const buttonClicked = () => {
-    window.location.href = "../pages/viewPlans.html";
-    console.log("first")
+
+function homepage(){
+    window.location.href="../index.html"
 }
-document.getElementById("viewPlanButton").addEventListener("click",buttonClicked);
+function view_plans(){
+    window.location.href="../pages/viewPlans.html"
+}
+
