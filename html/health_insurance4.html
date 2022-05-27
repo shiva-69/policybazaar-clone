@@ -4,259 +4,264 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Document</title>
+    <title>Document</title>
 
-<link rel="stylesheet" href="../styles/health_insurance4.css"/>
+    <link rel="stylesheet" href="../styles/health_insurance4.css" />
 
-<style>
+    <style>
+        .navbar {
 
-.navbar {
+            display: flex;
 
-display: flex;
+            justify-content: space-around;
 
-justify-content: space-around;
+            align-items: center;
 
-align-items: center;
+            height: 60px;
 
-height: 60px;
+            width: 105%;
 
-width: 105%;
+            margin: -8px;
 
-margin:-8px;
+            /* border: 1px solid black; */
 
-/* border: 1px solid black; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
 
-}
+        .navbar div {
 
-.navbar div{
+            width: 35%;
 
-width: 35%;
+            height: 90%;
 
-height: 90%;
+            /* text-align: center; */
 
-/* text-align: center; */
+            /* border: 1px solid black; */
 
-/* border: 1px solid black; */
+        }
 
-}
+        .navbar>div+div {
 
-.navbar >div+div{
+            display: flex;
 
-display: flex;
+            flex-direction: row-reverse;
+            margin-right: 10%;
 
-flex-direction: row-reverse;
-margin-right: 10%;
+        }
 
-}
+        .navbar>div+div img {
 
-.navbar >div+div img{
+            margin-top: 10px;
 
-margin-top: 10px;
+            width: 35%;
 
-width: 35%;
+            height: 50%;
 
-height: 50%;
+        }
 
-}
+        .navbar img {
 
-.navbar img{
+            margin-top: 7px;
 
-margin-top: 7px;
+            width: 60%;
 
-width: 60%;
+            height: 65%;
 
-height: 65%;
+        }
+        #button{
+            cursor: pointer;
+        }
+    </style>
 
-}
-
-</style>
-
-<!-- <link rel="stylesheet" href="../styles/health_insurance1.css"/> -->
+    <!-- <link rel="stylesheet" href="../styles/health_insurance1.css"/> -->
 
 </head>
 
 <body>
 
-<div class="navbar">
+    <div class="navbar">
+
 
 <div id="image_div"><img src="https://static.pbcdn.in/myaccount-cdn/images/login-logo.svg" onclick="homepage()"/></div>
 
-<div id="call_us"><img src="../Photos/callus_logo.png"/></div>
 
-<!-- <div class="call"><i class="fa-solid fa-headset"></i> </div> -->
+        <div id="call_us"><img src="../Photos/callus_logo.png" /></div>
 
-</div>
+        <!-- <div class="call"><i class="fa-solid fa-headset"></i> </div> -->
 
-<div class="main-div">
+    </div>
 
-<div class="left-div">
+    <div class="main-div">
 
-<h3 style="margin-left: 10px;">Why buy from Policybazaar?</h3>
+        <div class="left-div">
 
-<div class="p-content">
+            <h3 style="margin-left: 10px;">Why buy from Policybazaar?</h3>
 
-<p>Get up to 15% Online discount**</p>
+            <div class="p-content">
 
-</div>
+                <p>Get up to 15% Online discount**</p>
 
-<div class="line">
+            </div>
 
-<ul>
+            <div class="line">
 
-<li>30 minutes claim support*</li>
+                <ul>
 
-<li>All Covid-19 Treatments covered</li>
+                    <li>30 minutes claim support*</li>
 
-<li>Instant Purchase, No Medicals Required</li>
+                    <li>All Covid-19 Treatments covered</li>
 
-<li>Tax Benefits upto ₹ 75,000 under Sec. 80D</li>
+                    <li>Instant Purchase, No Medicals Required</li>
 
-</ul>
+                    <li>Tax Benefits upto ₹ 75,000 under Sec. 80D</li>
 
-</div>
+                </ul>
 
-<div class="img-url">
+            </div>
 
-<img src="https://static.pbcdn.in/health-cdn/images/prelead/images/leftHeroImage.webp" alt="">
+            <div class="img-url">
 
-</div>
+                <img src="https://static.pbcdn.in/health-cdn/images/prelead/images/leftHeroImage.webp" alt="">
 
-</div>
+            </div>
 
-<div class="right-div">
+        </div>
 
-<p class="p-tag">Just few last details</p>
+        <div class="right-div">
 
-<h2> To help us find the right health plan for you</h2>
+            <p class="p-tag">Just few last details</p>
 
-<div class="line-left"></div>
+            <h2> To help us find the right health plan for you</h2>
 
-<h4>Do you have an existing illness or medical history?</h4>
+            <div class="line-left"></div>
 
-<p>This helps us find plans that cover your condition and avoid claim rejection</p>
+            <h4>Do you have an existing illness or medical history?</h4>
 
-</br></br>
+            <p>This helps us find plans that cover your condition and avoid claim rejection</p>
 
-<div id="select_anyOne">
+            </br></br>
 
-<div>
+            <div id="select_anyOne">
 
-<div><input type="checkbox"/></div>
+                <div>
 
-<div>
+                    <div><input type="checkbox" /></div>
 
-<div><b>Existing illness</b></div>
+                    <div>
 
-<div>Blood pressure, Diabetes, Heart conditions, Asthma, Thyroid, Cancer etc.</div>
+                        <div><b>Existing illness</b></div>
 
-</div>
+                        <div>Blood pressure, Diabetes, Heart conditions, Asthma, Thyroid, Cancer etc.</div>
 
-</div>
+                    </div>
 
-<div>
+                </div>
 
-<div><input type="checkbox"/></div>
+                <div>
 
-<div>
+                    <div><input type="checkbox" /></div>
 
-<div><b>Covid 19</b></div>
+                    <div>
 
-<div>
+                        <div><b>Covid 19</b></div>
 
-Tested positive for Covid-19</div>
+                        <div>
 
-</div>
+                            Tested positive for Covid-19</div>
 
-</div>
+                    </div>
 
-<div>
+                </div>
 
-<div><input type="checkbox"/></div>
+                <div>
 
-<div>
+                    <div><input type="checkbox" /></div>
 
-<div><b>Surgical procedure</b></div>
+                    <div>
 
-<div>
+                        <div><b>Surgical procedure</b></div>
 
-Appendix, Gall bladder, C-section etc.</div>
+                        <div>
 
-</div>
+                            Appendix, Gall bladder, C-section etc.</div>
 
-</div>
+                    </div>
 
-<div id="none_of_these">
+                </div>
 
-<div><input type="checkbox"/></div>
-<div>
-<div ><b>None of these</b></div>
+                <div id="none_of_these">
 
-</div>
+                    <div><input type="checkbox" /></div>
+                    <div>
+                        <div><b>None of these</b></div>
 
-</div>
+                    </div>
+
+                </div>
+
 
 </div>
 </br></br>
 <div id="button"><button value="Continue" onclick="view_plans()">View Plans</button></div>
 
-</div>
 
-</div>
+        </div>
 
-<div class="bottom-div">
+    </div>
 
-<b></b>
+    <div class="bottom-div">
 
-<h2>Why buy from Policybazaar?</h2><b></b>
+        <b></b>
 
-<div class="content-1">
+        <h2>Why buy from Policybazaar?</h2><b></b>
 
-<img src="" alt="">
+        <div class="content-1">
 
-<h3>Platinum insurance partner</h3>
+            <img src="" alt="">
 
-<p>Policybazaar is the largest partner for most Health Insurers and a Platinum partner, which means
+            <h3>Platinum insurance partner</h3>
 
-your policy and claims will be treated on a priority</p>
+            <p>Policybazaar is the largest partner for most Health Insurers and a Platinum partner, which means
 
-</div>
+                your policy and claims will be treated on a priority</p>
 
-<div class="content-2">
+        </div>
 
-<img src="" alt="">
+        <div class="content-2">
 
-<h3>Affordable options</h3>
+            <img src="" alt="">
 
-<p>We make Health insurance more affordable for you through various monthly payment options and
+            <h3>Affordable options</h3>
 
-discounts provided by our Partners</p>
+            <p>We make Health insurance more affordable for you through various monthly payment options and
 
-</div>
+                discounts provided by our Partners</p>
 
-<div class="content-3">
+        </div>
 
-<img src="" alt="">
+        <div class="content-3">
 
-<h3>30 minute claim support*</h3>
+            <img src="" alt="">
 
-<p>Our Claim specialists will reach your hospital or home in 30 minutes to support your health
+            <h3>30 minute claim support*</h3>
 
-insurance claim</p>
+            <p>Our Claim specialists will reach your hospital or home in 30 minutes to support your health
 
-</div>
+                insurance claim</p>
 
-</div>
+        </div>
+
+    </div>
 
 </body>
+<script src="../scripts/health_insurance4.js"></script>
 
 </html>
 
-<script src="../scripts/health_insurance4.js"></script>

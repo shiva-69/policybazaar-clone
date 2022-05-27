@@ -4,7 +4,9 @@
 body{
     margin: 0px
 }
-
+button{
+    cursor: pointer;
+}
 /* insurancePlanPrt */
 .insurensePlan{
     display: grid;

@@ -1,3 +1,5 @@
+let fetchedData;
+
 document.getElementById("cover").addEventListener("click", () => {
     let modal = document.getElementById("modal");
     modal.setAttribute("class", "active");
@@ -17,7 +19,7 @@ const getData = async () => {
     try {
         let response = await fetch(url);
         response = await response.json();
-        console.log(response);
+        fetchedData = response;
         displayData(response);
     } catch (error) {
         console.log(error)
@@ -27,8 +29,8 @@ const getData = async () => {
 const displayData = (data) => {
     let mainContainer = document.getElementById("dataWrapper");
     let container = document.getElementsByClassName("leftData")[0];
-    // container.innerHTML = "";
-    console.log(container)
+    container.innerHTML = "";
+    // console.log(container)
 
     data.forEach((item) => {
         let dataCardWrapper = document.createElement("div");
@@ -62,7 +64,7 @@ const displayData = (data) => {
 
         let detail1 = document.createElement("p");
         detail1.setAttribute("class", "detail1");
-        detail1.innerHTML= item.p1;
+        detail1.innerHTML = item.p1;
         detailContainer.appendChild(detail1);
 
         let detail2 = document.createElement("p");
@@ -71,7 +73,7 @@ const displayData = (data) => {
         detailContainer.appendChild(detail2);
 
         let detail3 = document.createElement("p");
-        detail3.setAttribute("class", "detail2");
+        detail3.setAttribute("class", "detail3");
         detail3.innerHTML = item.p3;
         detailContainer.appendChild(detail3);
 
@@ -100,11 +102,11 @@ const displayData = (data) => {
         let coveramount = document.createElement("div");
         coveramount.setAttribute("class", "coveramount");
         let p1 = document.createElement("p");
-        p1.innerHTML= "Cover Amount";
+        p1.innerHTML = "Cover Amount";
         coveramount.appendChild(p1);
         let p2 = document.createElement("p");
         p2.setAttribute("class", "totalCover");
-        p2.innerHTML= item.cover;
+        p2.innerHTML = item.cover;
         coveramount.appendChild(p2);
         premiumContainer.appendChild(coveramount);
 
@@ -146,3 +148,33 @@ const displayData = (data) => {
 
 }
 getData();
+
+const filterRate = (e) => { 
+    let modal = document.getElementById("modal");
+    modal.classList.remove("active");
+    let popup = document.getElementById("sortDisplay");
+    popup.classList.remove("active");
+    if (e.target.id == "onecrore" || "1crore") {
+        let data = fetchedData.filter((item) => {
+            return item.price >= 100;
+        })
+        displayData(data);
+    }
+    if (e.target.id == "fivelakh") {
+        let data = fetchedData.filter((item) => {
+            return item.price <= 5;
+        })
+        displayData(data);
+    }
+    if (e.target.id == "noRoomLimit") {
+        let data = fetchedData.filter((item) => {
+            return item.p1 == "No Room Rent Limit";
+        })
+        displayData(data);
+    }
+
+}
+
+document.getElementById("sortDisplay").addEventListener("click", filterRate);
+document.getElementById("noRoomLimit").addEventListener("click", filterRate);
+document.getElementById("1crore").addEventListener("click", filterRate);
