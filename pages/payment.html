@@ -21,9 +21,14 @@
             height: 60px;
             width: 105%;
             margin: -8px;
-
             /* border: 1px solid black; */
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            box-shadow: 0px 2px 0px 0px rgb(189, 189, 189);
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
         }
 
         .navbar div {
@@ -161,17 +166,20 @@
             </div>
         </div>
         <div id="rightPart">
-            <header>Summary</header>
-            <p>Plan for:Self</p>
-            <div><img src="https://static.pbcdn.in/health-cdn/images/insurer-logo/Care_Health@2x.webp" alt="">
-                <p>Care Health - NCB Super Premium</p>
-                <p>Cover: ₹5 Lakhs</p>
+            <header class="bold">Summary</header>
+            <p id="self">Plan for: Self</p>
+            <div id="detailWrapper">
+                <img src="https://static.pbcdn.in/health-cdn/images/insurer-logo/Care_Health@2x.webp" alt="">
+                <div id="pContainer">
+                    <p class="bold" id="cover4">Care Health - NCB Super <br> Premium</p>
+                    <p id="cover5">Cover: ₹5 Lakhs</p>
+                </div>
             </div>
-            <div>
+            <div id="premiumContainer">
                 <span>Premium - 1 Year</span>
                 <span>₹8,066</span>
             </div>
-            <div>
+            <div id="totalPremium" class="bold">
                 <span>Total premium</span>
                 <span>₹ 8,066</span>
             </div>
