@@ -63,10 +63,12 @@ button{
 #number-line :last-child{
     color: black;
 }
-
+h2{
+    color: #253858;
+}
 #number-line hr {
     width: 40%;
-    height: 1px;
+    height: -2px;
     border: 0.1px solid #aaa;
 
 }
@@ -98,6 +100,7 @@ button{
 
 #details_and_summary{
     width: 90%;
+    display: flex;
     margin: auto;
     margin-top: 50px;
     height: 900px;
@@ -123,6 +126,9 @@ button{
     /* display: flex; */
 
 }
+#rightPart{
+    width: 30%;
+}
 #gray{
     margin-top: -5px;
 color: gray;
@@ -134,14 +140,14 @@ color: gray;
 #name input {
     width: 45%;
     height: 90%;
-    border: 1px solid red;
+    border: 1px solid #253858;
     padding-left: 8px;
     
 }
 #maritial_status{
     width: 45%;
     height: 99%;
-    border: 1px solid red;
+    border: 1px solid #253858;
     padding-left: 8px;
     
 }
@@ -149,7 +155,7 @@ color: gray;
     width: 40%;
     height: 95%;
     color: gray;;
-    border: 1px solid red;
+    border: 1px solid #253858;
 }
 #DOB_and_height{
     display: flex;
@@ -158,12 +164,12 @@ color: gray;
 #DOB{
     width: 39%;
     height: 90%;
-    border: 1px solid red;
+    border: 1px solid #253858;
 }
 #height_in_feets,#height_in_inches{
     width: 22%;
     height: 99%;
-    border: 1px solid red;
+    border: 1px solid #253858;
 
 }
 
@@ -174,7 +180,7 @@ color: gray;
 #weight input{
     height: 90%;
     width:39%;
-    border: 1px solid red;
+    border: 1px solid #253858;
 }
 
 /* #contact_details{
@@ -184,14 +190,14 @@ color: gray;
 #email_and_phone input{
     width: 45%;
     height: 90%;
-    border: 1px solid red;
+    border: 1px solid #253858;
 
 
 }
 #emergency_number input{
     width: 45%;
     height: 90%;
-    border: 1px solid red;
+    border: 1px solid #253858;
 
 
 }
@@ -207,7 +213,21 @@ color: gray;
     color: white;
     border: none;
 }
-input,select,button{
-    border-radius: 7px;
+input,select,button, select{
+    border-radius: 5px;
+    font-size: 16px;
+}
 
+#maritial_status{
+    border-radius: 5px;
+    font-size: 16px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#details_and_summary{
+    border: 2px solid red;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,152 +8,240 @@
     <link rel="shortcut icon" href="https://www.policybazaar.com/favicon.ico" />
     <title>PolicyBazaar Health Insurance: Cover Rs.5 Lac @ Rs12.9/Day</title>
     <link rel="stylesheet" href="../styles/payment.css">
+    <style>
+        body {
+            padding: auto 9%;
+        }
+
+        .navbar {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            width: 105%;
+            margin: -8px;
+
+            /* border: 1px solid black; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .navbar div {
+            width: 35%;
+            height: 90%;
+
+        }
+
+        .navbar>div+div {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-right: 10%;
+        }
+
+        .navbar>div+div img {
+            margin-top: 10px;
+            width: 35%;
+            height: 50%;
+        }
+
+        .navbar img {
+            margin-top: 7px;
+            width: 60%;
+            height: 65%;
+        }
+    </style>
 </head>
+
 <body>
-    <button id="rzp-button1">Pay</button>
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-<script>
-var options = {
-    "key": "rzp_test_djAzMB5jdFdgre", // Enter the Key ID generated from the Dashboard
-    "amount": "500", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-    "currency": "INR",
-    "name": "Acme Corp",
-    "description": "Test Transaction",
-    "image": "https://example.com/your_logo",
-    "order_id": "order_JaMkNfjpRJpm9l", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-    "handler": function (response){
-        alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature)
-    },
-    "prefill": {
-        "name": "Gaurav Kumar",
-        "email": "gaurav.kumar@example.com",
-        "contact": "9999999999"
-    },
-    "notes": {
-        "address": "Razorpay Corporate Office"
-    },
-    "theme": {
-        "color": "#3399cc"
-    }
-};
-var rzp1 = new Razorpay(options);
-rzp1.on('payment.failed', function (response){
-        alert(response.error.code);
-        alert(response.error.description);
-        alert(response.error.source);
-        alert(response.error.step);
-        alert(response.error.reason);
-        alert(response.error.metadata.order_id);
-        alert(response.error.metadata.payment_id);
-});
-document.getElementById('rzp-button1').onclick = function(e){
-    rzp1.open();
-    e.preventDefault();
-}
-</script>
-
-    <div id="back"><a href="../pages/viewPlans.html">Go back to view plans </a></div>
-
-
- <div id="details_and_summary">
-
-   <div id="fill_details">
-
-   <!-- <div id="progress_stage"> -->
-    <div id="number-line">
-        <p style="background-color: rgb(31, 81, 31);">1</br>Proposer</p>
-        <hr>
-        <p id="para2">2 </br>Review&Pay</p>
-        <hr>
-        <p>3</br>Proposal</p>
+    <div class="navbar">
+        <div id="image_div"><img src="https://static.pbcdn.in/myaccount-cdn/images/login-logo.svg"
+                onclick="homepage()" /></div>
+        <div id="call_us"><img src="../Photos/callus_logo.png" /></div>
+        <!-- <div class="call"><i class="fa-solid fa-headset"></i> </div> -->
     </div>
-   <!-- </div> -->
-   <hr>
 
-       <h2>Great! Let’s start with proposer details</h2>
-       <h4 id="gray">Proposer is going to pay the premium and avail tax benefits</h4>
-   
+    <!-- <div id="back"><a href="../pages/viewPlans.html">Go back to view plans </a></div> -->
 
-   <div id="name">
-    <input type="text" placeholder="Full Name">
-    <select name="Maritial Status" id="maritial_status">
-        <option >Marital Status</option>
-        <option value="single">single</option>
-        <option value="Married">Married</option>
-        <option value="Divorced">Divorced</option>
-        <option value="Widow(ER)">Widow(ER)</option>
-    </select>
-   </div>
 
-   <div>
-       <input type="checkbox"/><span>Don't have a last name</span>
-   </div>
+    <div id="details_and_summary">
 
-   <div id="gender_select">
-       <select>
-           <option value="Male">Male</option>
-           <option value="Female">Female</option>
-       </select>
-   </div>
+        <div id="fill_details">
 
-   <div>
-       <b>Personal Details</b></br>Information required about the member to be insured
-   </div>
+            <!-- <div id="progress_stage"> -->
+            <div id="number-line">
+                <p style="background-color: rgb(90, 177, 90); font-weight: 500; color: white">1</br
+                        style="color: black">Proposer</p>
+                <hr>
+                <p id="para2">2 </br>Review&Pay</p>
+                <hr>
+                <p>3</br>Proposal</p>
+            </div>
+            <!-- </div> -->
+            <hr>
 
-   <div id="DOB_and_height" >
-       <input type="text" id="DOB" placeholder="D.O.B(DD-MM-YYYY)">
-       <select id="height_in_feets">
-           <option>Height(Feet)</option>
-           <option value="1">1</option>
-           <option value="2">2</option>
-           <option value="3">3</option>
-           <option value="4">4</option>
-           <option value="5">5</option>
-           <option value="6">6</option>
-           <option value="7">7</option>
-           <option value="8">8</option>
-       </select>
-       <select id="height_in_inches">
-           <option>Height(Inches)</option>
-           <option value="0">0</option>
-           <option value="1">1</option>
-           <option value="2">2</option>
-           <option value="3">3</option>
-           <option value="4">4</option>
-           <option value="5">5</option>
-           <option value="6">6</option>
-           <option value="7">7</option>
-           <option value="8">8</option>
-           <option value="9">9</option>
-           <option value="10">10</option>
-       </select>
-   </div>
+            <h2>Great! Let's start with proposer details</h2>
+            <h4 id="gray">Proposer is going to pay the premium and avail tax benefits</h4>
 
-   <div id="weight">
-       <input type="number" placeholder="Weight"/>
-   </div>
 
-   <div id="contact_details">
-   <b>Contact Details</b></br>
-   It will be used to send digital copy of your policy
-   </div>
-   <div id="email_and_phone">
-       <input type="email" placeholder="Email Address">
-       <input type="number" placeholder="Mobile Number">
-   </div>
+            <div id="name">
+                <input type="text" placeholder="Full Name">
+                <select name="Maritial Status" id="maritial_status">
+                    <option>Marital Status</option>
+                    <option value="single">single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widow(ER)">Widow(ER)</option>
+                </select>
+            </div>
 
-    <div id="emergency_number">
-        <input type="number" placeholder="Emergency Number">
+            <div>
+                <input type="checkbox" /><span>Don't have a last name</span>
+            </div>
+
+            <div id="gender_select">
+                <select>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div>
+                <b>Personal Details</b></br>Information required about the member to be insured
+            </div>
+
+            <div id="DOB_and_height">
+                <input type="text" id="DOB" placeholder="D.O.B(DD-MM-YYYY)">
+                <select id="height_in_feets">
+                    <option>Height(Feet)</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <select id="height_in_inches">
+                    <option>Height(Inches)</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <div id="weight">
+                <input type="number" placeholder="Weight" />
+            </div>
+
+            <div id="contact_details">
+                <b>Contact Details</b></br>
+                It will be used to send digital copy of your policy
+            </div>
+            <div id="email_and_phone">
+                <input type="email" placeholder="Email Address">
+                <input type="number" placeholder="Mobile Number">
+            </div>
+
+            <div id="emergency_number">
+                <input type="number" placeholder="Emergency Number">
+            </div>
+            <div>
+                <div id="button">
+                    <button id="rzp-button1">Review & Pay</button>
+                </div>
+            </div>
+        </div>
+        <div id="rightPart">
+            <header>Summary</header>
+            <p>Plan for:Self</p>
+            <div><img src="https://static.pbcdn.in/health-cdn/images/insurer-logo/Care_Health@2x.webp" alt="">
+                <p>Care Health - NCB Super Premium</p>
+                <p>Cover: ₹5 Lakhs</p>
+            </div>
+            <div>
+                <span>Premium - 1 Year</span>
+                <span>₹8,066</span>
+            </div>
+            <div>
+                <span>Total premium</span>
+                <span>₹ 8,066</span>
+            </div>
+        </div>
     </div>
-<div>
-    <div id="button">
-        <button>Review & Pay</button>
-    </div>
-</div> 
-    </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <button id="rzp-button1">Pay</button> -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        var options = {
+            "key": "rzp_test_djAzMB5jdFdgre", // Enter the Key ID generated from the Dashboard
+            "amount": "63000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+            "currency": "INR",
+            "name": "Shivam",
+            "description": "Health Insurance Policy",
+            "image": "https://static.pbcdn.in/health-cdn/images/insurer-logo/Care_Health@2x.webp",
+            "order_id": "order_JaMkNfjpRJpm9l", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+            "handler": function (response) {
+                alert(response.razorpay_payment_id);
+                alert(response.razorpay_order_id);
+                alert(response.razorpay_signature)
+            },
+            "prefill": {
+                "name": "Shivam Pandey",
+                "email": "shivam@gmail.com",
+                "contact": "8948738832"
+            },
+            "notes": {
+                "address": "Bengaluru"
+            },
+            "theme": {
+                "color": "#3399cc"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.on('payment.failed', function (response) {
+            alert(response.error.code);
+            alert(response.error.description);
+            alert(response.error.source);
+            alert(response.error.step);
+            alert(response.error.reason);
+            alert(response.error.metadata.order_id);
+            alert(response.error.metadata.payment_id);
+        });
+        document.getElementById('rzp-button1').onclick = function (e) {
+            rzp1.open();
+            e.preventDefault();
+        }
+    </script>
+
 </body>
 <script src="../scripts/payment.js"></script>
+
 </html>

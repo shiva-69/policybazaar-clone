@@ -135,6 +135,9 @@ const displayData = (data) => {
         let buynowButton = document.createElement("button");
         buynowButton.setAttribute("class", "buynow");
         buynowButton.innerHTML = "Buy now";
+        buynowButton.addEventListener("click", function(){
+            redirect();
+        })
         premiumWrapper.appendChild(buynowButton);
         rightDataContainer.appendChild(premiumWrapper);
 
@@ -149,6 +152,9 @@ const displayData = (data) => {
 }
 getData();
 
+const redirect = () => {
+    window.location.href = "./payment.html"
+}
 const filterRate = (e) => { 
     let modal = document.getElementById("modal");
     modal.classList.remove("active");
@@ -178,3 +184,4 @@ const filterRate = (e) => {
 document.getElementById("sortDisplay").addEventListener("click", filterRate);
 document.getElementById("noRoomLimit").addEventListener("click", filterRate);
 document.getElementById("1crore").addEventListener("click", filterRate);
+
