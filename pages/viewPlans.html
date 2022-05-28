@@ -16,7 +16,7 @@
         <div id="rightNav">
             <div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNC45MjUiIGhlaWdodD0iMTYuMDE4Ij48cGF0aCBkPSJNLjAwNiAxMC4wNzRhNzYuOTI5IDc2LjkyOSAwIDAxMC0xLjkyMiAxLjE4MSAxLjE4MSAwIDAxLjQ2Ny0uOTI2IDYuOTE4IDYuOTE4IDAgMDExLjgyNS00LjkzQTYuNTQzIDYuNTQzIDAgMDE2LjAwNy4xNzNhNi44IDYuOCAwIDAxNi43ODUgMi4zMTggNi43IDYuNyAwIDAxMS42NjIgNC43NDUgMS4yMiAxLjIyIDAgMDEuNDcxLjk4NXYxLjc4NmExLjIyNSAxLjIyNSAwIDAxLS42MTkgMS4wNzMgMi4xNSAyLjE1IDAgMDEtMS4wMzQuMzIyaC0uMDg5YTEuMDU1IDEuMDU1IDAgMDEtMS0uNjYxIDEuOTc3IDEuOTc3IDAgMDEtLjE1OS0uNjc1di0uMDFsLjAzNS0yLjE5NGExLjE2NCAxLjE2NCAwIDAxLjgtLjk5MiA1LjA3MiA1LjA3MiAwIDAwLS41NDUtMi4yMzEgNS4yNzQgNS4yNzQgMCAwMC00LjEtMi45NzggNS4zNjEgNS4zNjEgMCAwMC02LjA3OSA0LjQxNiA1Ljc2OCA1Ljc2OCAwIDAwLS4wNjIuN3YuMWExLjEyNCAxLjEyNCAwIDAxLjc0Ny43NzYgMS44NjggMS44NjggMCAwMS4wODMuNTQzdjEuODE0YTEuOTU1IDEuOTU1IDAgMDEtLjEuNTcyIDEuMTgxIDEuMTgxIDAgMDEtLjQwOC41ODkgMy4wNjkgMy4wNjkgMCAwMDMuMDU0IDIuODExaC40YS43OTMuNzkzIDAgMDEuNjkyLS40aDEuNTI4YS44LjggMCAwMS44Ljh2LjgzNmEuOC44IDAgMDEtLjguOEg2LjU0MmEuNzkzLjc5MyAwIDAxLS42OS0uNDEyaC0uNEE0LjY4NyA0LjY4NyAwIDAxLjc4IDExLjE4NGExLjcxNSAxLjcxNSAwIDAxLS4yNC0uMTQ3IDEuMiAxLjIgMCAwMS0uNTM1LS45NjN6IiBmaWxsPSIjMjUzODU4Ii8+PC9zdmc+" alt=""> Call us </div>
 
-            <button>CALL ME NOW</button>
+            <button id="rzp-button1">CALL ME NOW</button>
         </div>
     </div>
     <div id="clientInfoDiv">
@@ -145,6 +145,52 @@
         </div>
     </section>
 
+
+    
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+var options = {
+    "key": "rzp_test_djAzMB5jdFdgre", // Enter the Key ID generated from the Dashboard
+    "amount": "500", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    "currency": "INR",
+    "name": "Masai School",
+    "description": "Test Transaction",
+    "image": "https://example.com/your_logo",
+    "order_id": "order_JaMkNfjpRJpm9l", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+    "handler": function (response){
+        alert(response.razorpay_payment_id);
+        alert(response.razorpay_order_id);
+        alert(response.razorpay_signature)
+    },
+    "prefill": {
+        "name": "Shivam Pandey",
+        "email": "Shivam@gmail.com",
+        "contact": "8639236399"
+    },
+    "notes": {
+        "address": "Bengaluru"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+var rzp1 = new Razorpay(options);
+rzp1.on('payment.failed', function (response){
+        alert(response.error.code);
+        alert(response.error.description);
+        alert(response.error.source);
+        alert(response.error.step);
+        alert(response.error.reason);
+        alert(response.error.metadata.order_id);
+        alert(response.error.metadata.payment_id);
+});
+document.getElementById('rzp-button1').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+</script>
+
+    
 
 </body>
 <script src="../scripts/viewplans.js"></script>
