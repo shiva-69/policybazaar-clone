@@ -187,6 +187,11 @@ color: gray;
     display: flex;
     justify-content: space-between;
 } */
+
+#email_and_phone{
+    display: flex;
+    justify-content: space-between;
+}
 #email_and_phone input{
     width: 45%;
     height: 90%;
@@ -216,6 +221,7 @@ color: gray;
 input,select,button, select{
     border-radius: 5px;
     font-size: 16px;
+    padding-left: 10px;
 }
 
 #maritial_status{
@@ -230,4 +236,18 @@ input::-webkit-inner-spin-button {
 
 #details_and_summary{
     border: 2px solid red;
+}
+#proposer,#review,#proposal{
+    margin-top: 4%;
+}
+
+#proposer p,#review p,#proposal p{
+    margin-left: 12px;
+    margin-bottom: 0px;
+    /* color: white; */
+/* padding-top: 10px; */
+}
+#proposer h6,#review h6,#proposal h6{
+    margin-top: 0px;
+    color: gray;
 }
