@@ -1,7 +1,7 @@
 
 # Policybazaar Clone
 
-Policybazaar is an app that offers all kinds of insurances and investment plans. Different sorts of insurance policies can be compared to get better value product.
+Policybazaar is an app that offers all kinds of insurances and investment plans. Different sorts of insurance policies can be compared to get a better value product.
 
 ## Deployed Link
 
@@ -34,7 +34,7 @@ You can navigate through this app by following below points.
 
 - From the Home Page, navigate to health insurance icon.
 - Fill in the details in the subsequent pages.
-- Finally you will reach to a Page wherein the quotes of different policies can br viewed.
+- Finally you will reach to a Page wherein the quotes of different policies can be viewed.
 - Select any quote, then reach to payments page by filling in your details.
 
 
