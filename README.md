@@ -11,6 +11,7 @@ Policybazaar is an app that offers all kinds of insurances and investment plans.
 ## Authors
 
 
+- [Shivam](https://github.com/shiva-69)
 - [Avinash](https://github.com/Avi1702)
 - [Gaurav](https://github.com/gauravsft)
 - [Vishnu](https://github.com/vishnu-me)
