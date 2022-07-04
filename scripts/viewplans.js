@@ -15,7 +15,7 @@ document.getElementById("closeCoverSort").addEventListener("click", () => {
 })
 
 const getData = async () => {
-    let url = "http://localhost:3000/viewPlans";
+    let url = "https://jsonserverlive.herokuapp.com/viewPlans";
     try {
         let response = await fetch(url);
         response = await response.json();

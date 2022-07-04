@@ -71,7 +71,7 @@ async function displayData(data){
         minibox5.append(Button);
 
         Button.onclick=async function(){
-            window.location.href="";
+            window.location.href="./pages/payment.html";
         }
 
         box.append(minibox1,minibox2,minibox3,minibox4,minibox5);
