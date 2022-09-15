@@ -28,7 +28,7 @@ Policybazaar is an app that offers all kinds of insurances and investment plans.
 - Local Storage
 
 
-## Expected flow on the App
+## Expected flow on the App: 
 
 You can navigate through this app by following below points.
 
